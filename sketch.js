@@ -1,7 +1,10 @@
 const canvasSketch = require('canvas-sketch');
 
 const settings = {
-  dimensions: [ 2048, 2048 ]
+  dimensions: 'A4', // array uses [ width, height ]
+  orientation: 'landscape',
+  units: 'cm',
+  pixelsPerInch: 300
 };
 
 const sketch = () => {
@@ -13,7 +16,8 @@ const sketch = () => {
     context.arc(
       width / 2,
       height / 2,
-      200,
+      2,
+      // width * 0.2, // use width to be resolution-independent
       0,
       Math.PI * 2,
       false
@@ -21,7 +25,7 @@ const sketch = () => {
     context.fillStyle = 'red';
     context.fill();
 
-    context.lineWidth = 40;
+    context.lineWidth = width * 0.05; // use width to be resolution-independent
     context.strokeStyle = 'blue';
     context.stroke();
   };
