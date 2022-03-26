@@ -1,6 +1,12 @@
-# Creative Coding & Generative Art with JavaScript
+# Creative Coding Frontend Masters Course
 
-This repository includes code & resources for students attending my *Generative Art & Creative Coding with JavaScript* workshops in 2018.
+## A repo to follow along with this [course](https://frontendmasters.com/courses/canvas-webgl)
+
+---
+
+Creative Coding & Generative Art with JavaScript
+
+This repository includes code & resources for students attending my _Generative Art & Creative Coding with JavaScript_ workshops in 2018.
 
 # Contents
 
@@ -28,19 +34,19 @@ This repository includes code & resources for students attending my *Generative 
 
 Here is a list of tools, software and libraries that will be used during the workshop.
 
-| Tool | Documentation | Description |
-|---|---|---|
-| *Code Editor* | | A JavaScript code editor, [VSCode](https://code.visualstudio.com/) is recommended
-| *Browser* |  | A modern browser, [Chrome](https://www.google.com/chrome/) is recommended
-| *Canvas API* | [[docs](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)] | The HTML5 `<canvas>` API, built into all browsers 
-| *Command-Line* | [[guide](./docs/command-line.md)] | A command-line application like Terminal (macOS) or [cmder](http://cmder.net/) (Windows)
-| [Node.js](https://nodejs.org/en/) (v8+) | [[docs](https://nodejs.org/dist/latest-v8.x/docs/api/)] | Used for running command-line JavaScript tools
-| [npm](https://npmjs.com/) (v5+) | [[docs](https://nodejs.org/dist/latest-v8.x/docs/api/)] | Used to install third-party dependencies and tools
-| [`canvas-sketch`](https://github.com/mattdesl/canvas-sketch/) | [[docs](https://github.com/mattdesl/canvas-sketch/tree/master/docs)] | A development tool & framework for Generative Art
-| [`canvas-sketch-util`](https://github.com/mattdesl/canvas-sketch-util/) | [[docs](https://github.com/mattdesl/canvas-sketch-util/tree/master/docs)] | Utilities for Math & Random Number Generation
-| [ThreeJS](https://threejs.org/) | [[docs](https://threejs.org/docs/)] | A 3D rendering engine for WebGL
+| Tool                                                                    | Documentation                                                             | Description                                                                              |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| _Code Editor_                                                           |                                                                           | A JavaScript code editor, [VSCode](https://code.visualstudio.com/) is recommended        |
+| _Browser_                                                               |                                                                           | A modern browser, [Chrome](https://www.google.com/chrome/) is recommended                |
+| _Canvas API_                                                            | [[docs](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)]     | The HTML5 `<canvas>` API, built into all browsers                                        |
+| _Command-Line_                                                          | [[guide](./docs/command-line.md)]                                         | A command-line application like Terminal (macOS) or [cmder](http://cmder.net/) (Windows) |
+| [Node.js](https://nodejs.org/en/) (v8+)                                 | [[docs](https://nodejs.org/dist/latest-v8.x/docs/api/)]                   | Used for running command-line JavaScript tools                                           |
+| [npm](https://npmjs.com/) (v5+)                                         | [[docs](https://nodejs.org/dist/latest-v8.x/docs/api/)]                   | Used to install third-party dependencies and tools                                       |
+| [`canvas-sketch`](https://github.com/mattdesl/canvas-sketch/)           | [[docs](https://github.com/mattdesl/canvas-sketch/tree/master/docs)]      | A development tool & framework for Generative Art                                        |
+| [`canvas-sketch-util`](https://github.com/mattdesl/canvas-sketch-util/) | [[docs](https://github.com/mattdesl/canvas-sketch-util/tree/master/docs)] | Utilities for Math & Random Number Generation                                            |
+| [ThreeJS](https://threejs.org/)                                         | [[docs](https://threejs.org/docs/)]                                       | A 3D rendering engine for WebGL                                                          |
 
-# Installing the Prerequisites 
+# Installing the Prerequisites
 
 Before starting the workshop, make sure you have installed and set up:
 
