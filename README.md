@@ -1,4 +1,4 @@
-# Creative Coding Frontend Masters Course
+# Canvas WebGL Frontend Masters Course
 
 ## A repo to follow along with this [course](https://frontendmasters.com/courses/canvas-webgl)
 
