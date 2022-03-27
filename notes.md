@@ -27,3 +27,7 @@ Cubic Bezier.com
 Shaders with Canvas Sketch
 
 - add a `--hot` flag to the startup script for faster hot-reloading
+
+Penplotter Template
+
+- started with `npx canvas-sketch penplotter.js --new --template=penplot`
