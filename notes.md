@@ -13,3 +13,8 @@ Sol LeWitt
 - the same set of instructions sometimes had different interpretations in different galleries
 - created a sense of randomness and a generative aspect to his art
 - [solvingsol.com](http://solvingsol.com) reimagines his instructions as JS programs
+
+GifTool
+
+- makes gifs from a folder of images
+- [link](https://giftool.surge.sh)
