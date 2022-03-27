@@ -23,3 +23,7 @@ Cubic Bezier.com
 
 - a tool to create custom easing functions
 - [link](https://cubic-bezier.com)
+
+Shaders with Canvas Sketch
+
+- add a `--hot` flag to the startup script for faster hot-reloading
