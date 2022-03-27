@@ -40,15 +40,19 @@ const sketch = ({ context }) => {
 
   const palette = random.pick(palettes);
 
-  const fragmentShader = `
+  const fragmentShader = glslify(`
     varying vec2 vUv;
 
+    #pragma glslify: noise = require('glsl-noise/simplex/3d');
+
     uniform vec3 color;
+    uniform float time;
 
     void main () {
-      gl_FragColor = vec4(vec3(color * vUv.x), 1.0);
+      float offset = 0.3 * noise(vec3(vUv.xy * 5.0, time));
+      gl_FragColor = vec4(vec3(color * vUv.x + offset), 1.0);
     }
-  `;
+  `);
 
   const vertexShader = glslify(`
     varying vec2 vUv;
@@ -60,12 +64,16 @@ const sketch = ({ context }) => {
     void main () {
       vUv = uv;
       vec3 pos = position.xyz;
-      pos += noise(vec4(position.xyz, time));
+
+      // pos += noise(vec4(position.xyz, time));
+      pos += 0.5 * normal * noise(vec4(pos.xyz * 0.75, time));
+      pos += 0.1 * normal * noise(vec4(pos.xyz * 4.0, time));
+
       gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
     }
   `);
 
-  const box = new THREE.BoxGeometry(1, 1, 1);
+  const box = new THREE.SphereGeometry(1, 32, 32);
   const meshes = [];
   for (let i = 0; i < 40; i++) {
     const mesh = new THREE.Mesh(
