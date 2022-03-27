@@ -54,6 +54,7 @@ const sketch = ({ gl }) => {
     // Specify additional uniforms to pass down to the shaders
     uniforms: {
       // Expose props from canvas-sketch
+      // can also use playhead
       time: ({ time }) => time,
       aspect: ({ width, height }) => width / height
     }
