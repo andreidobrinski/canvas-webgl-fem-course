@@ -38,7 +38,7 @@ const sketch = ({ context }) => {
   for (let i = 0; i < 40; i++) {
     const mesh = new THREE.Mesh(
       box,
-      new THREE.MeshBasicMaterial({
+      new THREE.MeshStandardMaterial({
         color: random.pick(palette),
       })
     );
@@ -55,6 +55,12 @@ const sketch = ({ context }) => {
     mesh.scale.multiplyScalar(0.5);
     scene.add(mesh);
   }
+
+  scene.add(new THREE.AmbientLight('hsl(0, 0%, 40%)'));
+
+  const light = new THREE.DirectionalLight('white', 1);
+  light.position.set(2, 2, 4);
+  scene.add(light);
 
   // draw each frame
   return {
