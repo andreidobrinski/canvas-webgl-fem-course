@@ -18,3 +18,8 @@ GifTool
 
 - makes gifs from a folder of images
 - [link](https://giftool.surge.sh)
+
+Cubic Bezier.com
+
+- a tool to create custom easing functions
+- [link](https://cubic-bezier.com)
